@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8"/>
+		<title></title>
+	</head>
+	<body>
+		<form>
+			電子郵件: <input type = "email" required> (必填) </br>
+			個人網站: <input type = "url" placeholder = "請輸入合法網址"> </br>
+			目前年齡: <input type = "number" min = "18"> </br>
+			身份證字號: <input type = "text" pattern = [A-Za-z]{1}[12]{1}[0-9]{8} placeholder = "例: A123456789"> </br>
+			聯絡電話: <input type = "tel" pattern = [0-9]{6,10} placeholder = "可接受市話或行動電話"> </br>
+			出生日期: <input type = "date" value = "2014-04-16" min = "1970-01-01" max = "2015-12-31"> </br>
+			<input type = "submit">
+		</form>
+	</body>
+</html>

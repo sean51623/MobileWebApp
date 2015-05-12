@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="user-scalable=no,initial-scale=1" />
+		<title>PT53</title>
+		<link rel="stylesheet" href="PT53.css" type="text/css" media="all" />
+		<script src="./jquery.mobile/jquery-2.1.0.min.js"></script>
+		<script src="./jquery.mobile/jquery.mobile-1.4.0.min.js"></script>
+	</head>
+	<body>
+		<canvas id="photos" width="400" height="265"></canvas>
+		<div id="desc"></div>
+		<script type="text/javascript" src="PT53.js"></script>
+		<script>
+			var x = 0;
+			var desc = ['傅園', '總圖書館', '醉月湖', '椰林大道', '傅鐘', '校門'];
+
+			$(function()
+			{
+				drawPhoto(x);
+				// Next one
+				$('#photos').on('swipeleft', swipeHandlerLeft);
+				function swipeHandlerLeft(event)
+				{
+					x = x + 1;
+					if (x >= 0)
+					{
+						x = x % desc.length;
+					}
+					else
+					{
+						x = desc.length - (Math.abs(x) % desc.length);
+					}
+					drawPhoto(x);
+				}
+				// Previous one
+				$('#photos').on('swiperight', swipeHandlerRight);
+				function swipeHandlerRight(event)
+				{
+					x = x - 1;
+					if (x >= 0)
+					{
+						x = x % desc.length;
+					}
+					else
+					{
+						x = desc.length - (Math.abs(x) % desc.length);
+					}
+					drawPhoto(x);
+				}
+			});
+		</script>
+	</body>
+</html>

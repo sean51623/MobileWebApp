@@ -1,0 +1,18 @@
+*
+{
+	-webkit-user-select: none;
+	background-color: black;
+}
+#photos
+{
+	-webkit-border-radius: 15px;
+	padding: 5px;
+	width: 450px;
+	height: 260px;
+}
+#desc
+{
+	text-align: center;
+	width: 100%;
+	color: white;
+}

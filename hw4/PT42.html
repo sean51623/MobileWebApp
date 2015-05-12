@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./jquerym/jquery.mobile/jquery.mobile-1.4.0.min.css" />
+		<link rel="stylesheet" href="PT42.css" type="text/css" media="all"/>
+		<script src = "./jquerym/jquery.mobile/jquery-2.1.0.min.js"></script>
+		<script src = "./jquerym/jquery.mobile/jquery.mobile-1.4.0.min.js"></script>
+		<script src= "PT42.js"></script>
+	</head>
+	<body>
+		<!-- page 1-->
+		<div data-role="page" id="page1">
+			<div data-role="header">
+			<h1>時間APP</h1>
+			</div>
+			
+			<div role="main">
+				<p><a href="#page2">文字版時鐘</a></p>
+				<p><a href="#page3">圖片版時鐘</a></p>
+			</div>
+			
+			<div data-role="footer">
+			<!--<h2>First footer</h2>-->
+			</div>
+		</div>
+		
+		<!-- page 2-->
+		<div data-role="page" id="page2">
+			<div data-role="header">
+				<h1>文字版時鐘</h1>
+				<a href="#page1">回主頁</a>
+			</div>
+			
+			<div role="main">
+				<div id="clock1">00:00:00</div>
+				<!--<p><a href="#page1">回上頁</a></p>-->
+			</div>
+			
+			<div data-role="footer">
+			</div>
+		</div>
+		
+		<!-- page 3-->
+		<div data-role="page" id="page3">
+			<div data-role="header">
+				<h1>圖片版時鐘</h1>
+				<a href="#page1">回主頁</a>
+			</div>
+			
+			<div role="main">
+				<div id="clock2">Loading...</div>
+				<!--<p><a href="#page1">回上頁</a></p>-->
+			</div>
+			
+			<div data-role="footer">
+			</div>
+		</div>
+	</body>
+</html>
