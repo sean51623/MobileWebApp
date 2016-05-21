@@ -1,0 +1,11 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	-webkit-user-select: none;
+}
+html, body, #mapObj
+{
+	width:100%;
+	height:100%;
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title></title>
+	</head>
+	<body>
+		<div id="ls"></div>
+		<script>
+			var result='';
+			for (var i = 0; i<localStorage.length; i++)
+			{
+				var key= window.localStorage.jey(i);
+				result += key+'=>'+window.localStorage.getItem(key)+'<br>';
+			}
+			document.getElementById('ls').innerHTML=result;
+		</script>
+	</body>
+</html>

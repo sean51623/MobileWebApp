@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="user-scalable=no,initial-scale=1" />
+		<title>影音播放程式</title>
+	</head>
+	<body>
+	<audio src="../audios/01.mp3" id="vd" controls></audio>
+	<div id="controller">
+		<img src="../images/play.png" id="vplay" />
+		<img src="../images/pause.png" id="vpause" />
+		<img src="../images/back.png" id="vback" />
+		<img src="../images/repeat.png" id="vrepeat" />
+		<form>
+			<select id="audioName">
+				<option value="01.mp3">合唱版</option>
+				<option value="02.mp3">交響樂合唱版</option>
+				<option value="03.mp3">鋼琴合唱版</option>
+				<option value="04.mp3">高竹嵐</option>
+				<option value="05.mp3">王佳音鋼琴變奏</option>
+			</select>
+		</form>
+	</div>
+	<script src="./js/player.js"></script>
+	</body>
+</html>

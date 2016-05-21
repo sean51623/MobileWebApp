@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="user-scalable=no, initial-scale=1"/>
+		<title></title>
+		<link rel="stylesheet" href="./jquery.mobile/jquery.mobile-1.4.0.min.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="PT60.css" type="text/css" media="all" />
+		<script src="./jquery.mobile/jquery-2.1.0.min.js"></script>
+		<script src="./jquery.mobile/jquery.mobile-1.4.0.min.js"></script>
+	</head>
+	<body>
+		<div data-role="page">
+		<div data-role="header" data-position="fixed" data-fullscreen="true">
+		<div data-role = "collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+			<h1>工具列</h1>
+			<div data-role = "collapsible-set">
+				<div data-role = "collapsible">
+					<h2>筆刷色彩</h2>
+					<div data-role="navbar">
+						<ul>
+							<li><a href="#" id="blackPen" class="ui-btn-active" data-theme="a">黑</a></li>
+							<li><a href="#" id="redPen" data-theme="a">紅</a></li>
+							<li><a href="#" id="greenPen" data-theme="a">綠</a></li>
+							<li><a href="#" id="bluePen" data-theme="a">藍</a></li>
+							<li><a href="#" id="purplePen" data-theme="a">紫</a></li>
+						</ul>
+					</div>
+				</div>
+				<div data-role = "collapsible">
+					<h2>筆刷形式</h2>
+					<div data-role="navbar">
+						<ul>
+							<li><a href="#" id="roundH" class="ui-btn-active" data-theme="a">圓頭</a></li>
+							<li><a href="#" id="buttH" data-theme="a">平頭</a></li>
+							<li><a href="#" id="squareH" data-theme="a">方頭</a></li>
+						</ul>
+					</div>
+				</div>
+				<div data-role = "collapsible">
+					<h2>筆刷大小</h2>
+					<div data-role="navbar">
+						<ul>
+							<li><a href="#" id="line5" class="ui-btn-active" data-theme="a">5</a></li>
+							<li><a href="#" id="line10" data-theme="a">10</a></li>
+							<li><a href="#" id="line15" data-theme="a">15</a></li>
+							<li><a href="#" id="line20" data-theme="a">20</a></li>
+							<li><a href="#" id="line30" data-theme="a">30</a></li>
+						</ul>
+					</div>
+				</div>
+				<div data-role = "collapsible">
+					<h2>幾何圖形</h2>
+					<div data-role="navbar">
+						<ul>
+							<li><a href="#" id="free" class="ui-btn-active" data-theme="a">線條</a></li>
+							<li><a href="#" id="line" data-theme="a">線段</a></li>
+							<li><a href="#" id="rect" data-theme="a">矩形</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class = "ui-grid-a">
+					<div class = "ui-block-a"><a href="#" id="save" data-role = "button">儲存</a></div>
+					<div class = "ui-block-b"><a href="#" id="delete" data-role = "button">清空</a></div>
+				</div>
+			</div>
+		</div>
+		</div>
+		
+		<div role = "main" data-position="fixed" data-fullscreen="true">
+			<canvas id="draw"></canvas>
+		</div>
+		</div>
+
+		<script type="text/javascript" src="HW6.js"></script>
+		<script type="text/javascript" src="base64.js"></script>
+		<script type="text/javascript" src="canvas2image.js"></script>
+	</body>
+</html>
